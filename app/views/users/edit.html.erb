@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <h2>User info</h2>
+    <%= form_with model: @user do |f| %>
+      <%= render 'layouts/errors', book: @user %>
+      <div>
+      <label for="inputName">Name</label>
+        <div>
+          <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
+        </div>
+      </div>
+      <div>
+      <label for="inputImage">Image</label>
+        <div>
+          <%= f.file_field :profile_image, placeholder: "profile_image", accept: "image/*" %>
+        </div>
+      </div>
+      <div>
+        <label for="inputOpinion">Introduction</label>
+          <div>
+            <%= f.text_field :introduction, autofocus: true, id:"inputIntroduction"%>
+          </div>
+      </div>
+      <%= f.submit "Update User" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div>
+      <h1>Editing Book</h1>
+      <%= render 'layouts/errors', book: @book %>
+      <%= render 'books/form', book: @book %>
+      <%= link_to "Show", book_path(@book.id) %>
+      |<%= link_to "Back", books_path %>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+

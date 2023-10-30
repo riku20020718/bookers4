@@ -10,7 +10,7 @@
               <% if user_signed_in? %>
                 <li class="nav-item">
                   <%= link_to user_path(current_user) do %>
-                    <i class="fa-solid fa-house"></i> Home
+                    <i class="fas fa-home"></i> Home
                   <% end %>
                 </li>
                 <li class="nav-item">
@@ -20,18 +20,18 @@
                 </li >
                 <li class="nav-item">
                   <%= link_to books_path do %>
-                    <i class="fa-sharp fa-solid fa-book-open"></i>Books
+                    <i class="fas fa-book-open"></i>Books
                   <% end %>
                 </li>
                 <li class="nav-item">
                   <%= link_to destroy_user_session_path, method: :delete do %>
-                    <i class="fa-solid fa-right-from-bracket"></i>Log out
+                    <i class="fas fa-sign-out-alt"></i>Log out
                   <% end %>
                 </li>
               <% else %>
                 <li class="nav-item">
                   <%= link_to root_path do %>
-                    <i class="fa-solid fa-house"></i> Home
+                    <i class="fas fa-home"></i> Home
                   <% end %>
                 </li>
                 <li class="nav-item">
@@ -41,7 +41,7 @@
                 </li>
                 <li class="nav-item">
                   <%= link_to new_user_registration_path do %>
-                    <i class="fa-solid fa-user-plus"></i>Sign up
+                    <i class="fas fa-user-plus"></i>Sign up
                   <% end %>
                 </li>
                 <li class="nav-item">
